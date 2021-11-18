@@ -1,0 +1,269 @@
+body {
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(161,203,224,1) 25%, rgba(161,203,224,1) 75%, rgba(255,255,255,1) 100%);
+}
+
+#game {
+  margin-left: 18%;
+  max-width: 1400px;
+}
+
+#disable {
+  pointer-events: none;    
+}
+
+#enable {
+  pointer-events: auto;    
+}
+
+#game div {
+  border: 2px solid rgba(0, 0, 255, .2);
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 255, .2);
+  width: 15%;
+  height: 200px;
+  margin: 10px;
+  display: inline-block;
+}
+
+
+
+
+
+.titleContainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+
+
+.startContainer {
+  width: 314px;
+  height: 140px;
+}
+
+.startContainer:hover {
+  width: 314px;
+}
+
+.startButton {
+  border: none;
+  background-color: rgba(136, 106, 106, .0)
+}
+
+.startButton:hover {
+}
+
+.startGame {
+  font-style: garamond;
+  font-size: 40px;
+  padding: 5px 18px 5px 18px;
+  color: rgba(108, 108, 255, 0.5);
+  text-shadow: 0px 0px 7px rgb(255, 255, 255);
+  border: 2px solid rgba(0, 0, 255, .2);
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 5px rgba(133, 133, 255, 0.2);
+}
+
+.startGame:hover {   
+  color: rgba(0, 0, 255, .5);
+  border: 2px solid rgba(0, 0, 255, .2);
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 255, .2);
+}
+
+.startGame:active {
+  font-size: 39px;
+}
+
+
+
+
+
+.memoryContainer {
+  width: 600px;
+}
+
+.memoryTitle {
+  font-style: garamond;
+  font-size: 50px;
+  padding: 5px 18px 5px 18px;
+  text-shadow: 0px 0px 7px rgb(255, 255, 255);
+  color: rgba(0, 0, 255, .5);
+  border: 2px solid rgba(0, 0, 255, .2);
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 255, .2);
+}
+
+
+
+
+
+
+.currentScoreContainer {
+  width: 314px;
+  height: 140px;
+}
+
+.currentScoreContainer:hover {
+  width: 314px;
+}
+
+.currentScoreButton {
+  border: none;
+  background-color: rgba(136, 106, 106, .0)
+}
+
+#score {
+  font-style: garamond;
+  font-size: 40px;
+  padding: 5px 18px 5px 18px;
+  text-shadow: 0px 0px 7px rgb(255, 255, 255);
+  color: rgba(0, 0, 255, .5);
+  border: 2px solid rgba(0, 0, 255, .2);
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 255, .2);
+}
+
+
+ 
+
+
+
+
+
+
+.highScoreContainer {
+  
+  /* width: 440px; */
+  height: 140px;
+}
+
+.highScoreContainer:hover {
+  /* margin-left: 37%;  */
+  
+  /* width: 440px; */
+}
+
+.highScoreButton {
+  margin-left: 39%;
+  border: none;
+  background-color: rgba(136, 106, 106, .0)
+}
+
+.highScoreButton:hover {
+}
+
+.highScore {
+  font-style: garamond;
+  font-size: 40px;
+  padding: 5px 18px 5px 18px;
+  color: rgba(108, 108, 255, 0.5);
+  text-shadow: 0px 0px 7px rgb(255, 255, 255);
+  border: 2px solid rgba(0, 0, 255, .2);
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 5px rgba(133, 133, 255, 0.2);
+}
+
+.highScore:hover {  
+  color: rgba(0, 0, 255, .5);
+  border: 2px solid rgba(0, 0, 255, .2);
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 255, .2);
+}
+
+.highScore:active {
+  font-size: 39px;
+}
+
+
+#hideScoring {
+  visibility: hidden;
+}
+
+#seeScoring { 
+  visibility: visible;
+}
+
+
+
+
+.saveScoreContainer {
+  
+  display: flex;
+  justify-content: space-evenly;
+  height: 150px;
+}
+
+.saveScoreContainer:hover {
+  /* margin-left: 37%;  */
+  
+  /* width: 440px; */
+}
+
+.saveScoreButton {
+  /* margin; */
+  border: none;
+  color: rgba(136, 106, 106, .2)
+  border: 2px solid rgba(0, 0, 255, .2);
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 5px rgba(133, 133, 255, 0.2);
+}
+
+
+.saveScoreButton:hover {
+}
+
+.saveScore {
+
+
+}
+
+.saveScore:hover {  
+  color: rgba(0, 0, 255, .5);
+  border: 2px solid rgba(0, 0, 255, .2);
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 255, .2);
+}
+
+.saveScore:active {
+  font-size: 39px;
+}
+
+#scoreForm {
+  display: flex;
+  flex-direction: column-reverse;
+  font-style: garamond;
+  font-size: 40px;
+  padding: 0px 18px 0px 18px;
+  color: rgba(108, 108, 255, 0.5);
+  text-shadow: 0px 0px 7px rgb(255, 255, 255);
+  line-height:80px;
+  transform: translateY(-13px);
+}
+
+#initials::placeholder {
+  font-style: garamond;
+  font-size: 40px;
+  /* padding: 5px 18px 5px 18px; */
+  color: rgba(108, 108, 255, 0.5);
+  text-shadow: 0px 0px 7px rgb(255, 255, 255);
+  line-height: 100px;
+  transform: translateY(2px);
+}
+
+#initials {
+  font-style: garamond;
+  font-size: 40px;
+  color: rgba(108, 108, 255, 0.5);
+  text-shadow: 0px 0px 7px rgb(255, 255, 255);
+}
+
+input[type=text] {
+  color: rgba(0, 0, 255, .5);
+  border: 2px solid rgba(0, 0, 255, .2);
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 255, .2);
+  padding: 8px;
+
+}
