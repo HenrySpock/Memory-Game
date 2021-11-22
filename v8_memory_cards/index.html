@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="signifyingm.ico" type="image/x-icon" alt="motivique icon">
+    <title>Memory Game!</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="totalContainer">
+
+        <div class="titleContainer">
+
+        <div class="topRow">
+          <div class="paletteContainer">
+              <h1 class="paletteTitle">PALETTES</h1>
+          </div>
+
+          <div class="currentScoreContainer">
+              <h1 id="score">SCORE: </h1>
+          </div>
+        </div>
+
+        <div class="startContainer"> 
+            <h1 class="startGame">START GAME</h1>
+            <div class="dropdown">
+              <button class="dropbtn"></button>
+              <div class="dropdown-content">
+                <a href="#muted" onclick="muteLoad()">Primary and Secondary</a>
+                <a href="#roy" onclick="royLoad()">ROY G BIV</a>
+                <a href="#dogs" onclick="dogsLoad()">Dogs Playing Poker</a>
+                <a href="#bob" onclick="bobLoad()">Bob Ross</a>
+                <a href="#link" onclick="linkLoad()">The Legend of Zelda</a>
+                <a href="#joker" onclick="jokerLoad()">The Animated Batmen: The Joker</a>
+                <a href="#bayushi" onclick="bayushiLoad()">Bayushi Kwanchai</a>
+                <a href="#dali" onclick="daliLoad()">The Persistence of Memory</a>
+                <a href="#angel" onclick="angelLoad()">Fallen Angel</a>
+                <a href="#starry" onclick="starryLoad()">The Starry Night</a>
+                <a href="#lilies" onclick="liliesLoad()">The Water Lilies</a>
+                <a href="#mont" onclick="montLoad()">Mont St. Michel</a>
+                
+                <a href="#r12" id = "12" onclick="RANDOM12LOAD()">Random 12</a>
+                <a href="#r24" id = "24" onclick="RANDOM24LOAD()">Random 24</a>
+                <a href="#r36" id = "36" onclick="RANDOM36LOAD()">Random 36</a>
+                <a href="#r48" id = "48" onclick="RANDOM48LOAD()">Random 48</a>
+                <a href="#r60" id = "60" onclick="RANDOM60LOAD()">Random 60</a>
+              </div>
+            </div> 
+        </div>
+
+            <div class="currentContainer">
+              <h2 id="currentGame">ᕕ( ᐛ )ᕗ LET'S GO!</h2>
+            </div>
+            
+            <!-- <div class="musicContainer">
+              <audio id="myAudio" src="a_bit_of_a_shuffle.mp3" onClick="togglePlay()"><h2 class="musicSwitch">MUSIC OFF</h2></audio>
+            </div> -->
+
+            <div class="highScoreContainer">
+                <h2 class="highScore">SEE HIGH SCORES</h2>
+            </div>
+        
+            <div class="saveScoreContainer" id="hideScoring">
+              <!-- <button class="saveScoreButton"> -->
+                <form action="" id="scoreForm">
+                  <input id="initials" type="text" placeholder="Enter Initials:">
+                  <label for="initials">Save your score?</label></form>
+              <!-- </button> -->
+            </div>
+
+
+
+        </div>
+
+      <div id="game">
+      </div>
+
+  </div>
+
+
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
